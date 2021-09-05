@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: rgb(164, 197, 178) !important;
+}
+
+input, select{
+  
+  outline : none;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 6px;
+  height: 40px;
+  padding-left: 8px;
+  margin-right: 5px;
+  width: 100%;
+}
+select{
+  padding-left: 4px;
+
+
+}
+
+
+
+@import "./mixin.scss";
+@import "./components/pantalla1";
+@import "./components/pantalla2";
+@import "./components/pantalla3";
+

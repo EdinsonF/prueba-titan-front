@@ -1,0 +1,98 @@
+.pantalla3_container{
+ 
+    @include container;
+    
+  justify-content: center;
+  align-items: center;
+}
+
+.pantalla3_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 90%;
+  width: 90%;
+}
+
+.pantalla3_form{
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid black;
+
+  select{
+
+    margin-right: 10px;
+    width: 30%;
+  }
+  
+   button{
+    @include btnEnviar;
+  }
+  
+
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    div:nth-child(1){
+      display: flex;
+      align-items: center;
+      width: 40%;
+
+      select{
+          width: 100%;
+      }
+  
+    }
+    div:nth-child(2){
+      display: flex;
+      align-items: center;
+      width: 40%; 
+    }
+  }
+
+}
+
+.pantalla3_lista{
+  width: 100%;
+  height: 65%;
+  overflow-y: scroll ;
+ 
+}
+
+.pantalla3_lista::-webkit-scrollbar {
+  width: 6px;     /* Tamaño del scroll en vertical */
+  height: 100px;    /* Tamaño del scroll en horizontal */
+  
+}
+.pantalla3_lista::-webkit-scrollbar-thumb {
+  background: darken($color: rgb(185, 228, 206), $amount: 5);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.pantalla3_lista::-webkit-scrollbar-thumb:hover {
+  background: darken($color: rgb(155, 196, 175), $amount: 3);
+  
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.pantalla3_lista::-webkit-scrollbar-thumb:active {
+  background-color: darken($color: rgb(185, 204, 194), $amount: 1);
+}
+
+
+.btnDelete{
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  i{
+    font-size: 20px;
+    color: rgb(165, 41, 41);
+  }
+}

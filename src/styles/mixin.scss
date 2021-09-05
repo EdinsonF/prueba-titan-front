@@ -1,0 +1,29 @@
+
+@mixin container {
+  background: #fff;
+  margin: 30px 200px;
+  height: 75vh;
+  border-radius: 15px;
+  display: flex;
+}
+
+@mixin btnEnviar {
+    height: 45px;
+    width: 80px;
+    margin-left: 10px;
+    background: rgb(109, 202, 81);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+
+    &:hover{
+      background: rgb(130, 223, 102);
+
+    }
+    &:active{
+      background: rgb(107, 190, 81);
+    }
+
+    
+}

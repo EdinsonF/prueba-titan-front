@@ -1,0 +1,14 @@
+.pantalla1_container{
+  @include container;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pantalla1_form{
+  height: 150px;
+  width: 50%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
